@@ -1,6 +1,7 @@
 import { Route,Routes } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import LoginPage from '../pages/LoginPage';
+import PostPage from '../pages/PostPage';
 
 
 function Router(){

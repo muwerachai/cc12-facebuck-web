@@ -16,7 +16,6 @@ function RegisterForm({ onSuccess }) {
     confirmPassword: ''
   });
 
-  
   const handleChangeInput = e => {
     setInput({ ...input, [e.target.name]: e.target.value });
   };
@@ -31,7 +30,7 @@ function RegisterForm({ onSuccess }) {
       startLoading();
       await register(input);
       toast.success('success register');
-      onSuccess();
+      await onSuccess();
     } catch (err) {
       toast.error(err.response.data.message);
     } finally {

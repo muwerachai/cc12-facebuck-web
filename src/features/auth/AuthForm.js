@@ -19,7 +19,7 @@ function AuthForm() {
         </button>
       </div>
       <Modal title="Sign Up" open={isOpen} onClose={() => setIsOpen(false)}>
-        <RegisterForm onSuccess={() => setIsOpen(false)} />
+        <RegisterForm onSuccess={ () => setIsOpen(false)} />
         </Modal>
     </div>
   );
